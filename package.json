@@ -2,7 +2,7 @@
   "name": "react-ts-extension-pack",
   "displayName": "React Ts Extension Pack",
   "description": "Out-of-the-box;Standard, elegant, quick start developing React;",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "mengfei0053",
   "icon": "images/128x128.png",
   "engines": {
