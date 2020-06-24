@@ -44,14 +44,14 @@ jobs:
             const tag = await github.git.createTag({
                 owner,
                 repo,
-                tag:version,
-                message:`release version ${version}`,
+                tag:`v${version}`,
+                message:`release version v${version}`,
                 object:context.sha,
                 type:'commit',
             });
             const tagref = await github.git.createRef({
               owner,
               repo,
-              ref:`refs/tags/${version}`,
+              ref:`refs/tags/v${version}`,
               sha:tag.data.sha,
             })
