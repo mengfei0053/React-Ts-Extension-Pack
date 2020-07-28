@@ -25,6 +25,11 @@ export default class Utils {
         "typescriptreact",
       ],
       "eslint.enable": true,
+      "eslint.workingDirectories": [
+        {
+          mode: "auto",
+        },
+      ],
       // -----------------------editor settings----------------------------
       "editor.colorDecorators": false,
       "editor.renderIndentGuides": true,
