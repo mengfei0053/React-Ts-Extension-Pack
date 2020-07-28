@@ -24,8 +24,5 @@ jobs:
       - env:
           AZURE_TOKEN: ${{secrets.AZURE_TOKEN}}
         run: |
-          npm install -g vsce
           yarn
-          vsce publish -p $AZURE_TOKEN
-          yarn build
           yarn release
