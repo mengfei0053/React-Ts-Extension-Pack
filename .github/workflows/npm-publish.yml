@@ -21,10 +21,11 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm install -g vsce
-      - run: yarn
-      - run: vsce publish -p $AZURE_TOKEN
-      - run: yarn build
-      - run: yarn release
         env:
           AZURE_TOKEN: ${{secrets.AZURE_TOKEN}}
+        run: |
+          npm install -g vsce
+          yarn
+          vsce publish -p $AZURE_TOKEN
+          yarn build
+          yarn release
