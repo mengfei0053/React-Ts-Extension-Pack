@@ -12,7 +12,8 @@ export default class Utils {
       // -----------------------emmet settings----------------------------
       "emmet.triggerExpansionOnTab": true,
       "emmet.includeLanguages": {
-        javascript: ["javascriptreact", "typescriptreact"],
+        javascript: "javascriptreact",
+        typescript: "typescriptreact",
       },
       // -----------------------auto rename tag settings----------------------------
       "auto-rename-tag.activationOnLanguage": ["*"],
