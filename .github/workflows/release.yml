@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-        env:
+      - env:
           AZURE_TOKEN: ${{secrets.AZURE_TOKEN}}
         run: |
           npm install -g vsce
