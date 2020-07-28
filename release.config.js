@@ -1,5 +1,3 @@
-const { AZURE_TOKEN } = process.env;
-
 module.exports = {
   branches: ["master", { name: "beta", prerelease: true }],
   plugins: [
@@ -21,12 +19,6 @@ module.exports = {
       },
     ],
     "@semantic-release/release-notes-generator",
-    [
-      "@semantic-release/exec",
-      {
-        publishCmd: `npm i -g vsce && vsce package && vsce publish -p ${AZURE_TOKEN}`,
-      },
-    ],
     "@semantic-release/changelog",
     [
       "@semantic-release/github",
