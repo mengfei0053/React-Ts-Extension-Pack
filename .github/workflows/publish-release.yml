@@ -21,7 +21,8 @@ jobs:
           AZURE_TOKEN: ${{secrets.AZURE_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
-          yarn
-          yarn release
+          npm i
           npm i -g vsce
           vsce publish -p $AZURE_TOKEN
+          npm run release
+         
