@@ -1,3 +1,10 @@
+## [0.0.6](https://github.com/mengfei0053/React-Ts-Extension-Pack/compare/v0.0.5...v0.0.6) (2021-06-17)
+
+
+### Performance Improvements
+
+* **src/utils.ts:** remove some  discarded setttings ([c6da825](https://github.com/mengfei0053/React-Ts-Extension-Pack/commit/c6da82522005584b6c853e2967fdaa5806ec0041))
+
 ## [0.0.5](https://github.com/mengfei0053/React-Ts-Extension-Pack/compare/v0.0.4...v0.0.5) (2020-07-28)
 
 
