@@ -3,8 +3,6 @@ import * as vscode from "vscode";
 export default class Utils {
   static SetWorkSpaceConfig = () => {
     const c = {
-      // "files.autoSave": "onFocusChange",
-      "javascript.implicitProjectConfig.experimentalDecorators": true,
       // -----------------------git settings----------------------------
       //   "git.enableSmartCommit": true,
       //   "git.autofetch": true,
@@ -25,7 +23,6 @@ export default class Utils {
         "typescript",
         "typescriptreact",
       ],
-      "eslint.enable": true,
       "eslint.workingDirectories": [
         {
           mode: "auto",
